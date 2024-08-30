@@ -1,0 +1,66 @@
+/* Estilos personalizados */
+body {
+	font-family: Arial, sans-serif;
+}
+p{
+ color: rgb(255,0,0);
+ font-family: monospace;
+}
+p{
+ color: rgb(255,0,0);
+ font-family: fantasy;
+}
+
+.navbar {
+	margin-bootom: 20px;
+}
+.navbar {
+	position:fixed;
+	width:100%;
+	top:0;
+	z-index:1000;
+}
+body {
+	padding-top:70px; /* Ajustar segun la altura der la navbar*/
+}
+.body1 {
+  background-image: url('../img/fondoinicio.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.body2 {
+  background-image: url('../img/fondoinicio2.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.body3 {
+  background-image: url('../img/fondoinicio3.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.body4 {
+  background-image: url('../img/fondoinicio4.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.body5 {
+  background-image: url('../img/fondoinicio5.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+   
+}
+.body6 {
+  background-image: url('../img/bebidas.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+   
+}
+
+
+

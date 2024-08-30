@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Domicilios</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function mostrarAlerta(event) {
+            event.preventDefault(); // Evita el envío del formulario
+
+            // Obtiene los valores del formulario
+            var nombre = document.getElementById('name').value;
+            var pedido = document.getElementById('order').value;
+
+            // Muestra la alerta con los valores obtenidos
+            alert('Nombre: ' + nombre + '\nPedido: ' + pedido);
+        }
+    </script>
+</head>
+<body class="body5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Restaurante</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="Quienes_somos.html">Quienes Somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="Menu.html">Menú</a></li>
+                <li class="nav-item"><a class="nav-link" href="bebidas.html">Bebidas</a></li>
+                <li class="nav-item"><a class="nav-link" href="Domicilios.html">Domicilios</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactenos.html">Contáctenos</a></li>
+            </ul>
+        </div>
+    </nav>        
+    <div class="container mt-5">
+        <center>
+            <h1><p>Realiza tu Pedido a Domicilio</p></h1>
+            <form action="#" method="post" class="w-50 mx-auto" onsubmit="mostrarAlerta(event)">
+                <div class="form-group">
+                    <label for="name"><p>Nombre:</p></label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone"><p>Teléfono:</p></label>
+                    <input type="tel" id="phone" name="phone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="address"><p>Dirección:</p></label>
+                    <input type="text" id="address" name="address" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="order"><p>Pedido:</p></label>
+                    <textarea id="order" name="order" class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+            </form>
+        </center>
+    </div>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <footer class="bg-light text-center py-4">
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://facebook.com" class="btn btn-primary max-1" target="_blank">Facebook</a>
+        <a href="https://twitter.com" class="btn btn-primary max-1" target="_blank">Twitter</a>
+        <a href="https://instagram.com" class="btn btn-primary max-1" target="_blank">Instagram</a>
+    </footer>
+</body>
+</html>
